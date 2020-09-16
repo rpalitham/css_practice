@@ -1,0 +1,82 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.emoji
+{
+    height: 300px;
+    width: 300px;
+    background-color: #ffcd00;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji::before
+{
+    content: '';
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    top: 200px;
+    background-color: brown;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;
+}
+
+.emoji:hover::before
+{
+    content: '';
+    width: 150px;
+    height: 15px;
+    position: absolute;
+    top: 210px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.eyes
+{
+    position: relative;
+    display: flex;
+    top: -30px;
+}
+
+.eyes .eye
+{
+    position: relative;
+    background-color: #fff;
+    display: block;
+    height: 70px;
+    width: 70px;
+    margin: 0 15px;
+    border-radius: 50%;
+}
+
+.eyes .eye::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    background-color: #000;
+    border-radius: 50%;
+}
