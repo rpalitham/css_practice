@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: #262626;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    max-width: 1120px;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    font-size: 13px;
+}
+
+.main-nav img{
+    width: 120px;
+}
+
+.main-nav ul li{
+    padding: 0px 10px;
+}
+
+.main-nav ul li a{
+    padding-bottom: 2px;
+}
+.main-nav ul li a:hover{
+    border-bottom: 2px solid #262626;
+}
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav ul.main-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    background: #262626;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 0;
+    font-size: 15px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.dark {
+    color: #fff;
+}
+
+.dark .btn{
+    background : #f4f4f4;
+    color: #333;
+}
+
+.showcase {
+    width: 100%;
+    height: 400px;
+    background: url("./images/slide1.png") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.showcase p, .showcase h2{
+    margin-bottom: 10px;
+}
+
+.showcase .btn{
+    margin-top: 20px;
+}
+
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 40px;
+}
+
+.home-cards img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.home-cards h3{
+    margin-bottom: 5px;
+}
+
+.home-cards a {
+    display: inline-block;
+    font-weight: bold;
+    color: #0067b8;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.xbox {
+    background: url("./images/xbox.png") no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.xbox .content{
+    width: 40%;
+    padding: 50px 0 0 30px;
+}
+
+.xbox p, .carbon p{
+    margin: 10px 0px 20px;
+}
+
+.carbon {
+    background: url("./images/carbon.jpg") no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.carbon .content{
+    width: 40%;
+    padding: 40px 0 0 30px;
+}
+
+.links, footer{
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.links-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.links li{
+    line-height: 2.8;
+}
+
+.footer div{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer li{
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
